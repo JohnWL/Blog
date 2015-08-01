@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   
-  devise_for :users
   root 'posts#index'
   
   resources :posts do
@@ -8,5 +7,7 @@ Rails.application.routes.draw do
   end
   
   get '/about' => 'pages#about'
+  
+  devise_for :users, controllers: { sessions: 'users/sessions' }
   
 end
