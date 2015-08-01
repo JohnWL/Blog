@@ -1,6 +1,6 @@
 <div id="post_content">
   <h1 class="title">
-    <%= @post.title%>
+    <%= @post.title %>
   </h1>
   
   <p class="date">
@@ -13,4 +13,13 @@
   <p class="body">
     <%= @post.body %>
   </p>
+  
+  <div id="comments">
+    <h2><%= @post.comments.count %> Comments</h2>
+    <%= render partial: 'shared/comment', collection: @post.comments, as: :comment %>
+    
+    <h3>Add a comment:</h3>
+    <%= render 'shared/comment_form' %>
+    
+  </div>
 </div>
