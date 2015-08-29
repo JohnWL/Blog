@@ -3,7 +3,7 @@
 <head>
   <title>Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag    'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
+  <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -26,6 +26,22 @@
       <li><a href="https://twitter.com/JohnWLIV">Twitter</a></li>
       <li><a href="https://www.linkedin.com/profile/view?id=AAMAAAIISjEBQSfQ3So12f6s7HgpqxPdaN96Gy4">LinkedIn</a></li>
       <li><a href="https://github.com/JohnWL">Github</a></li>
+    </ul>
+    
+    <ul>
+      <li class="category">Rails Apps</li>
+      <li><a href="http://dribbble.johnlander.me">Dribbble Style App</a></li>
+      <li><a href="http://forum.johnlander.me">Message Forum</a></li>
+      <li><a href="http://jobs.johnlander.me">Job Listings</a></li>
+      <li><a href="http://movies.johnlander.me">Movie Reviews</a></li>
+      <li><a href="http://notepad.johnlander.me">Personal Notepad</a></li>
+      <li><a href="http://pinterest.johnlander.me">Pinterest Style App</a></li>
+      <li><a href="http://recipes.johnlander.me">Food Recipes</a></li>
+      <li><a href="http://reddit.johnlander.me">Reddit Style App</a></li>
+      <li><a href="http://restaurants.johnlander.me">Restaurant Reviews</a></li>
+      <li><a href="http://todo.johnlander.me">Todo List</a></li>
+      <li><a href="http://wiki.johnlander.me">Wiki</a></li>
+      <li><a href="http://exercise.johnlander.me">Exercise Log</a></li>
     </ul>
     
     <% if !user_signed_in? %>
