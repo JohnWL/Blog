@@ -46,7 +46,10 @@
     </ul>
     
     <% if !user_signed_in? %>
-      <p class="sign_in"><%= link_to 'Admin Login', new_user_session_path %></p>
+    <ul>
+      <li class="category">Admin</li>
+      <li><%= link_to 'Admin Login', new_user_session_path %></li>
+    </ul>
     <% end %>
   </div>
   
